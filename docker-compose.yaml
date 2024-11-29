@@ -1,8 +1,8 @@
 version: '3'
 
 networks:
-  ghana-network:
-    external: true
+  ghana-networks:
+   # external: true
 services:
   one:
     build:
@@ -10,7 +10,7 @@ services:
     image: ghana-1
     container_name: ghana-container-1
     networks:
-      - ghana-network
+      - ghana-networks
     ports:
     - "8080:8080"
 
@@ -20,6 +20,6 @@ services:
     image: ghana-2
     container_name: ghana-container-2
     networks:
-      - ghana-network
+      - ghana-networks
     ports:
     - "9090:8080"
