@@ -27,6 +27,17 @@
       <name>Test Project Site</name>
       <url>file:///tmp/maven-project-site</url>
     </site>
+
+    <repository>
+    <id>maven-releases</id>
+    <!-- CHANGE HERE by your team Nexus server -->
+    <url>http://13.126.124.159:8081/repository/maven-releases/</url>
+  </repository>
+  <snapshotRepository>
+    <id>maven-snapshots</id>
+    <!-- CHANGE HERE by your team Nexus server -->
+    <url>http://65.2.175.54:8082/repository/maven-releases/</url>
+  </snapshotRepository>
   </distributionManagement>
 
   <build>
@@ -216,5 +227,12 @@
   <prerequisites>
     <maven>3.0.3</maven>
   </prerequisites>
+<repositories>
+    <repository>
+      <id>maven-releases</id>
+      <name>maven-releases</name>
+      <url>http://13.126.124.159:8081/repository/maven-releases/</url>
+    </repository>
+<repositories>
 
 </project>
